@@ -75,3 +75,18 @@ numero = list()
 Sorteia(numero)  
 SomaPar(numero)
 """
+#Aprendendo a fazer docstring
+def Contador(inicio,fim,passo):
+    """Faz uma contagem e mostra na tela 
+
+    Args:
+        inicio int: inicio da contagem
+        fim int: Fim da contagem
+        passo int: passo da contagem
+    """
+    for i in range(inicio,fim,passo):
+        print(i , end=" ")
+
+Contador(1,10,1)
+
+help(Contador)
