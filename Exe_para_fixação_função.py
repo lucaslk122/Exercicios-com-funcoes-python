@@ -106,7 +106,7 @@ b = int(input("Digite valor de b: "))
 c = int(input("Digite valor de c: "))
 print(Somar(a,b,c))
 """
-
+"""
 #Fatorial com função que retorna um valor
 def Fatorial(n):
     f = 1
@@ -116,4 +116,19 @@ def Fatorial(n):
 
 n = int(input("Digite um numero: "))
 print(f"O fatorial de {n} é {Fatorial(n)}")
+"""
 
+#votação
+def Votação(ano_atual,ano_nascimento):
+    idade = ano_atual - ano_nascimento
+    if idade < 16:
+        return "Negado"
+    elif idade >= 18 or idade <= 60:
+        return "Obrigatório"
+    else:
+        return "Opcional"
+
+
+ano_atual = int(input("Digite o ano atual: "))
+ano_nascimento = int(input("Digite o ano de seu nascimento: "))
+print(Votação(ano_atual,ano_nascimento))
