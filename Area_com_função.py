@@ -30,13 +30,17 @@ b) de 10 até 0, de 2 em 2
 c) uma contagem personalizada
 def Contador(inicio,fim,passo):
     for i in range(1,11):
-        print(i,end=", ")
+        print(i,end=" ")
     print("\n")
-    for i in range(10,0,-2):
-        print(i,end=", ")
+    for i in range(10,-1,-2):
+        print(i,end=" ")
     print("\n")
-    for i in range(inicio,fim,passo):
-        print(i,end=", ")
+    if passo != 0:
+        for i in range(inicio,fim+1,passo):
+            print(i,end=" ")
+        else:
+            for i in range(inicio,fim,1):
+                print(i,end=" ")
     print("\n")
 
 inicio = int(input("Digite o inicio da contagem: "))
