@@ -95,7 +95,7 @@ def Somar(a,b,c=0):
 #c = int(input("Digite valor de c: "))
 Somar(1,2,8)
 """
-
+"""
 #returnando valores de uma função
 def Somar(a=0,b=0,c=0):
     s = a + b + c
@@ -105,5 +105,15 @@ a = int(input("Digite valor de a: "))
 b = int(input("Digite valor de b: "))
 c = int(input("Digite valor de c: "))
 print(Somar(a,b,c))
+"""
 
+#Fatorial com função que retorna um valor
+def Fatorial(n):
+    f = 1
+    for c in range(n,0,-1):
+        f *= c
+    return f
+
+n = int(input("Digite um numero: "))
+print(f"O fatorial de {n} é {Fatorial(n)}")
 
