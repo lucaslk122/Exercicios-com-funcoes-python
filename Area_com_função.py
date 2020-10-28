@@ -31,17 +31,18 @@ c) uma contagem personalizada
 def Contador(inicio,fim,passo):
     for i in range(1,11):
         print(i,end=" ")
-    print("\n")
+    print("="*30)
     for i in range(10,-1,-2):
         print(i,end=" ")
-    print("\n")
+    print("="*30)
     if passo != 0:
         for i in range(inicio,fim+1,passo):
             print(i,end=" ")
+        print("="*30)
         else:
             for i in range(inicio,fim,1):
                 print(i,end=" ")
-    print("\n")
+        print("="*30)
 
 inicio = int(input("Digite o inicio da contagem: "))
 fim = int(input("Digite o fim da contagem: "))
