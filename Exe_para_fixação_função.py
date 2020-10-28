@@ -49,3 +49,29 @@ fim = int(input("Digite o fim da contagem: "))
 passo = int(input("Digite o passo da contagem: "))
 Contador(inicio,fim,passo)
 #"""
+
+
+"""
+import random
+from time import sleep
+
+def Sorteia(lista):
+    print("Sorteando 5 valores da lista: ",end="")
+    for i in range(0,5):
+        n = random.randint(1,10)
+        lista.append(n)
+        print(f"{n}", end=" ", flush=True)
+        sleep(0.3)
+    print("Pronto!")
+
+def SomaPar(lista):
+    soma = 0
+    for i in lista:
+        if i % 2 == 0:
+            soma += i
+    print(f"Somando os valores pares de {lista}, temos {soma}")
+
+numero = list()
+Sorteia(numero)  
+SomaPar(numero)
+"""
