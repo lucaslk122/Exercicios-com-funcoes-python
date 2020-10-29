@@ -4,7 +4,7 @@ def valorPagamento(valor_prestação,dias_atraso):
     else:
         return valor_prestação + (valor_prestação*0.03) + (valor_prestação*dias_atraso*0.001)
 
-
+dasdasdasdasdasd
 while True:
     valor_prestação = float(input("Digite o valor da prestação  R$: "))
     dias_atraso = int(input("Digite os dias em atraso: "))
