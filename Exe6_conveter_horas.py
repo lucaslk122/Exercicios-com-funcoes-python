@@ -7,8 +7,10 @@ def saida(hora_12, hora_24, minuto_24):
     else:
         print(hora_24, ":", minuto_24, "AM")
 
-while True:
+resposta  = "s"
+while resposta == "s":
     hora_24 = int(input("\nDigite a hora: "))
     minuto_24 = int(input("Digite o minuto: "))
     hora_12 = conversor(hora_24)
     saida(hora_12, hora_24, minuto_24)
+    resposta = input("Deseja continuar/ s/n: ").lower()
